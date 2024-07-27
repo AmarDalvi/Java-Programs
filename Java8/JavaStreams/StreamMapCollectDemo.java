@@ -36,7 +36,7 @@ public class StreamMapCollectDemo {
             }
         }).collect(Collectors.toList());
         System.out.println(userDTOS2);
-        System.out.println("_______________________________________"); 
+        System.out.println("_______________________________________");
 
 //        using lambda expression for functional interface
         users.stream().map((User user) -> new UserDTO(user.getId(),user.getUserName(),user.getEmail())).forEach((userDTO -> System.out.println(userDTO)));
